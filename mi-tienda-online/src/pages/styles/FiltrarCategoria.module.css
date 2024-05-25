@@ -1,0 +1,12 @@
+/* Estilos para el componente CategoryFilter */
+.select-container {
+    margin-bottom: 20px;
+  }
+  
+  .select-container select {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+  }
