@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import styles from '../pages/styles/FiltarCategoria.module.css'
+import styles from '../pages/styles/FiltrarCategoria.module.css'
 
 export default function FiltarCategoria({ setProductos }) { 
   //Función llamda CategoryFilter, usa el prop setProductos que actualiza la lista de productos fuando se seleccione una categorira 
