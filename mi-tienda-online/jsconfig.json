@@ -1,8 +1,7 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
     "paths": {
-      "@/pages/": ["./src/pages/"] // Rutas para las páginas
+      "@/": ["./src/"]
     }
   }
 }
