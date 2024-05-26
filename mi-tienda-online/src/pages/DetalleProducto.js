@@ -1,7 +1,7 @@
 DetalleProducto.js
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router'; //accede a la info de la ruta actual
-import styles from '../pages/styles/DetalleProducto.module.css'; // Importa el archivo CSS Module
+import styles from '../styles/DetalleProducto.module.css' // Importa el archivo CSS Module
 
 export default function DetalleProducto ({ productId }) { //función llamada DetalleProducto que recibe un prop
   const [producto, setProducto] = useState(null);

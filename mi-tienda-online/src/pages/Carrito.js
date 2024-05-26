@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router'; //permite navegar entre tutas
-import styles from '../pages/styles/Carrito.module.css'
+import styles from '../styles/Carrito.module.css'
 import Header from './Header';
 import Footer from './Footer';
 
@@ -19,7 +19,7 @@ export default function Carrito() {//define la función Carrito
   }, []);
 
   const handleVolver = () => {
-    router.push('/');
+    router.push('/Index');
   }; //handleVolver se encarga de redirigir al usuario a la página principal cuando hace clic en un botón de "volver"
 
   const handleRemoveItem = (productId, removeAll = false) => {

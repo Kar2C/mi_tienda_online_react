@@ -4,7 +4,7 @@ import ListaProducto from './ListaProducto';
 import DetalleProducto from './DetalleProducto';
 import Header from './Header';
 import Footer from './Footer';
-import styles from '../pages/styles/Index.module.css';
+import styles from '../styles/Index.module.css';
 
 export default function MainComponent() { //Define función llamada MainComponent
   const [productos, setProductos] = useState([]); 

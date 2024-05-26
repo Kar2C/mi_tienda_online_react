@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../pages/styles/ListaProducto.module.css';
+import styles from '../styles/ListaProducto.module.css';
 
 export default function ProductList({ productos, verDetalle }) {
   //Función llamada productList, tiene dos props, 1. productos. 2. verDetalle.
