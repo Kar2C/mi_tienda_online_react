@@ -1,46 +1,47 @@
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-  }
+/* Estilos para el componente ListaProducto */
+.lista-producto {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
   
-  .productList {
-    list-style-type: none;
-    padding: 0;
-  }
+.lista-producto__lista {
+  list-style-type: none;
+  padding: 0;
+}
   
-  .productItem {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-  }
+.lista-producto__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
   
-  .productImage {
-    width: 100px;
-    height: auto;
-    margin-right: 20px;
-  }
+.lista-producto__imagen {
+  width: 100px;
+  height: auto;
+  margin-right: 20px;
+}
   
-  .productInfo {
-    display: flex;
-    flex-direction: column;
-  }
+.lista-producto__info {
+  display: flex;
+  flex-direction: column;
+}
   
-  .productInfo h3 {
-    margin: 0;
-    margin-bottom: 10px;
-  }
+.lista-producto__titulo {
+  margin: 0;
+  margin-bottom: 10px;
+}
   
-  .button {
-    padding: 8px 16px;
-    background-color: #dd90f6;
-    color: rgb(0, 0, 0);
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
+.lista-producto__boton {
+  padding: 8px 16px;
+  background-color: #dd90f6;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
   
-  .button:hover {
-    background-color: #670070;
-    color: white;
-  }
+.lista-producto__boton:hover {
+  background-color: #670070;
+  color: white;
+}

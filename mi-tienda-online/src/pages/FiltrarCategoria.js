@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react';
-import styles from '../styles/FiltrarCategoria.module.css'
+import styles from '../styles/FiltrarCategoria.module.css';
 
-export default function FiltarCategoria({ setProductos }) { 
-  //Función llamda CategoryFilter, usa el prop setProductos que actualiza la lista de productos fuando se seleccione una categorira 
+export default function FiltrarCategoria({ setProductos }) { 
+  //Función llamda FiltrarCategoria, usa el prop setProductos que actualiza la lista de productos cuando se seleccione una categoría 
   const [categorias, setCategorias] = useState([]);
   //categorias almacena el api
   //setCategorias actualiza el estado de categorias 
   //useState([]) inicializa categorias con un array vacio
   const [categoriaSeleccionada, setCategoriaSeleccionada] = useState('');
-  //categoriaSeleccionada almaecan la categoria seleccionada por el usuarii
+  //categoriaSeleccionada almacena la categoría seleccionada por el usuario
   //setCategoriaSeleccionada actualiza el estado
   //useState('') cadena vacia
 
@@ -22,21 +22,21 @@ export default function FiltarCategoria({ setProductos }) {
   //este efecto se encarga de realizar una solicitud HTTP para obtener la lista de categorías de productos
   //actualiza el estado del componente con estas categorías, incluyendo la opción "Todos" al principio de la lista
 
-  const filtrarPorCategoria = (categoria) => { //función que toma categria que es la categoria seleccionada por el usuario
+  const filtrarPorCategoria = (categoria) => { //función que toma categoría que es la categoría seleccionada por el usuario
     const url = categoria === 'Todos'
       ? 'https://fakestoreapi.com/products'
       : `https://fakestoreapi.com/products/category/${categoria}`;
       //es una validación ternaria. si... si no ...
     
-    fetch(url) //obtiene el valor de la categoria seleccionada
+    fetch(url) //obtiene el valor de la categoría seleccionada
       .then(res => res.json())
       .then(json => setProductos(json))
       .catch(err => console.error('Error fetching products:', err));
   };
 
-  const handleChange = (e) => { //funcion que toma a 'e' para manejar el manejo del cambio
-    const categoria = e.target.value; //se obtiene el valor de la categoria seleccionada en el select
-    setCategoriaSeleccionada(categoria); //Actualiza la categoria seleccionada
+  const handleChange = (e) => { //función que toma a 'e' para manejar el manejo del cambio
+    const categoria = e.target.value; //se obtiene el valor de la categoría seleccionada en el select
+    setCategoriaSeleccionada(categoria); //Actualiza la categoría seleccionada
     if (categoria) {
       filtrarPorCategoria(categoria);
     } else {
@@ -45,8 +45,12 @@ export default function FiltarCategoria({ setProductos }) {
   };
 
   return (
-    <div className={styles['select-container']}>
-      <select value={categoriaSeleccionada} onChange={handleChange}>
+    <div className={styles['filtrar-categoria__contenedor']}>
+      <select 
+        value={categoriaSeleccionada} 
+        onChange={handleChange} 
+        className={styles['filtrar-categoria__select']}
+      >
         <option value=''>Selecciona una Categoría</option>
         {categorias.map(categoria => (
           <option key={categoria} value={categoria}>{categoria}</option>

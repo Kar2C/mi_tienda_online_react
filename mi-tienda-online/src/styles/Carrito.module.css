@@ -1,35 +1,36 @@
-/* Estilos para el componente Cart */
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  .h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .li {
-    margin-bottom: 10px;
-  }
-  
-  .button {
-    padding: 8px 16px;
-    margin-left: 10px;
-    background-color: #dd90f6;
-    color: rgb(0, 0, 0);
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .button:hover {
-    background-color: #670070;
-    color: white;
-  }
+/* Estilos para el componente Carrito */
+
+.carrito__container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.carrito__title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.carrito__list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.carrito__item {
+  margin-bottom: 10px;
+}
+
+.carrito__button {
+  padding: 8px 16px;
+  margin-left: 10px;
+  background-color: #dd90f6;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.carrito__button:hover {
+  background-color: #670070;
+  color: white;
+}

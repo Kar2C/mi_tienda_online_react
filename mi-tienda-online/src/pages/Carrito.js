@@ -19,7 +19,7 @@ export default function Carrito() {//define la función Carrito
   }, []);
 
   const handleVolver = () => {
-    router.push('/Index');
+    router.push('/');
   }; //handleVolver se encarga de redirigir al usuario a la página principal cuando hace clic en un botón de "volver"
 
   const handleRemoveItem = (productId, removeAll = false) => {
@@ -56,28 +56,26 @@ export default function Carrito() {//define la función Carrito
   //Esta línea de código calcula la cantidad total de todos los productos en el carrito.
   //Suma la cantidad del producto actual (item.cantidad) al acumulador (total).
 
-
-
   return (
     <div>
       <Header cantidadEnCarrito={cantidadEnCarrito} />
       {/* se le asigna la cantidad de elementos en el carrito */}
-      <div className={styles.container}>
-        <h1 className={styles.h1}>Carrito de Compras</h1>
+      <div className={styles['carrito__container']}>
+        <h1 className={styles['carrito__title']}>Carrito de Compras</h1>
         {carrito.length === 0 ? (
           <p>El carrito está vacío.</p>
         ) : (
-          <ul className={styles.ul}>
+          <ul className={styles['carrito__list']}>
             {carrito.map(item => (
-              <li key={item.id} className={styles.li}>
+              <li key={item.id} className={styles['carrito__item']}>
                 {item.title} - Cantidad: {item.cantidad}
-                <button onClick={() => handleRemoveItem(item.id, false)} className={styles.button}>Eliminar uno</button>
-                <button onClick={() => handleRemoveItem(item.id, true)} className={styles.button}>Eliminar todo</button>
+                <button onClick={() => handleRemoveItem(item.id, false)} className={styles['carrito__button']}>Eliminar uno</button>
+                <button onClick={() => handleRemoveItem(item.id, true)} className={styles['carrito__button']}>Eliminar todo</button>
               </li>
             ))}
           </ul>
         )}
-        <button onClick={handleVolver} className={styles.button}>Volver a la página de inicio</button>
+        <button onClick={handleVolver} className={styles['carrito__button']}>Volver a la página de inicio</button>
       </div>
       <Footer />
     </div>

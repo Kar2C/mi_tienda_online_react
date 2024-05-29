@@ -1,41 +1,42 @@
-.header {
-    display: flex;
-    justify-content: space-between; /*distribuye los componenetes de forma uniforme*/
-    align-items: center;
-    background-color: #dd90f6;
-    color: white;
-    padding: 10px 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Agregar sombra */
-  }
-  
-  .title {
-    margin: 0;
-    color: rgb(255, 255, 255);
-    align-items: center;
-    text-align: center;
-    flex-grow: 1;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Agregar sombra al texto */
-  }
-  
-  .cartContainer {
-    display: flex;
-    align-items: center;
-  }
-  
-  .cartButton {
-    background: none;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    color: white;
-  }
-  
-  .cartIcon {
-    font-size: 28px;
-  }
-  
-  .cartCount {
-    margin-left: 8px;
-    font-size: 16px;
-  }
+/* Estilos para el componente Header */
+.encabezado {
+  display: flex;
+  justify-content: space-between; /* Distribuye los componentes de forma uniforme */
+  align-items: center;
+  background-color: #dd90f6;
+  color: white;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Agregar sombra */
+}
+
+.encabezado__titulo {
+  margin: 0;
+  color: rgb(255, 255, 255);
+  align-items: center;
+  text-align: center;
+  flex-grow: 1;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Agregar sombra al texto */
+}
+
+.encabezado__carrito-contenedor {
+  display: flex;
+  align-items: center;
+}
+
+.encabezado__carrito-boton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.encabezado__carrito-icono {
+  font-size: 28px;
+}
+
+.encabezado__carrito-cantidad {
+  margin-left: 8px;
+  font-size: 16px;
+}

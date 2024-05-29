@@ -1,31 +1,32 @@
-.container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  
-  .mainContent {
-    flex: 1;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  .title {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .button {
-    padding: 8px 16px;
-    background-color: #dd90f6;
-    color: rgb(0, 0, 0);
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .button:hover {
-    background-color: #670070;
-    color: white;
-  }
+/* Estilos para el componente principal */
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.contenido-principal {
+  flex: 1;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.titulo {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.boton {
+  padding: 8px 16px;
+  background-color: #dd90f6;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.boton:hover {
+  background-color: #670070;
+  color: white;
+}
